@@ -1,1 +1,16 @@
 /* Add CSS Styling */
+.unique, .another-unique {
+    font-family: "Helvetica", "Times New Roman", sans-serif;
+    font-size: 28px;
+    /* border: 5px solid gray ; */
+}
+
+.unique {
+    background-color: black;
+    color: white;
+}
+
+.another-unique {
+    background-color: rgb(255,255,0);
+    color: #000000;
+}
