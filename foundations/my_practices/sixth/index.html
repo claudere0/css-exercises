@@ -8,52 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="text-align: center; margin: 25px;">Basic Flexbox Properties</h1>
     <div class="main-container">
+        <h1 style="text-align: center; margin: 25px;">Basic Flexbox Properties</h1>
+    
         <h2>CSS Flexbox (<em>short for css flexible box layout module</em>)</h2>
-        <p>CSS Flexbox is short for the CSS Flexible Box Layout module.
-
-            Flexbox is a layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.
-            
-            Flexbox makes it easy to design a flexible and responsive layout, without using float or positioning.
-        </p>
+        <p>CSS Flexbox is short for the CSS Flexible Box Layout module.</p>
+        <p>Flexbox is a layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.</p>
+        <p>Flexbox makes it easy to design a flexible and responsive layout, without using float or positioning.</p>
         
-        <h2>To create flex container, use display property with flex value: display: flex;</h2>
-        <div class="big-red-container justify-content-center">
-            <div class="red-element">
-            </div>
-            <div class="red-element">
-            </div>
-            <div class="red-element">
-            </div>
-            <div class="red-element">
-            </div>
-            <div class="red-element">
-            </div>
+        <h2>To create flex container, use display property with flex value: <span class="pink-purple">display: flex;</span></h2>
+        
+        <div class="outer-container one-forth justify-evenly-align-center">
+            <div class="outer-container-item-4"></div>
+            <div class="outer-container-item-4"></div>
+            <div class="outer-container-item-4"></div>
+            <div class="outer-container-item-4"></div>
         </div>
 
-
-        <h2 >flex-wrap: wrap;</h2>
-
-        <div class="big-green-container">
-            <div class="green-element">
-            </div>
-
-            <div class="green-element">
-            </div>
-
-            <div class="green-element">
-            </div>
-
-            <div class="green-element">
-            </div>
-
-            <div class="green-element">
-            </div>
-
-            <div class="green-element">
-            </div>
+        <div class="outer-container one-to-one justify-evenly-align-center">
+            <div class="outer-container-item-1"></div>
         </div>
+
+        <div class="outer-container one-to-one wrap">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <!-- <h2 >flex-wrap: wrap;</h2> -->
 
     </div>
 </body>
