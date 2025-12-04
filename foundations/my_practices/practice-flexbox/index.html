@@ -143,10 +143,10 @@
             <div class="item"><h3>3</h3></div>
         </div>
 
-        <h2>Let's see how <span class="pink-purple">align-content</span> properties works</h2>
-        <h2>and use wrap effect <span class="pink-purple">flex-wrap: wrap;</span></h2>
-        <h3><span class="pink-purple">align-content: flex-start;</span></h3>
-        <div class="container w1k h1250 wrap align-content-flex-start">
+        <h2>And after that <span class="light-yellow">align-content</span> properties</h2>
+        <h2>with using wrap effect <span class="light-yellow">flex-wrap: wrap;</span></h2>
+        <h3><span class="light-yellow">align-content: flex-start;</span></h3>
+        <div class="container w1k h750 wrap align-content-flex-start">
             <div class="item"><h3>1</h3></div>
             <div class="item"><h3>2</h3></div>
             <div class="item"><h3>3</h3></div>
@@ -155,8 +155,8 @@
             <div class="item"><h3>6</h3></div>
         </div>
 
-        <h3><span class="pink-purple">align-content: center;</span></h3>
-        <div class="container w1k h1250 wrap align-content-center">
+        <h3><span class="light-yellow">align-content: center;</span></h3>
+        <div class="container w1k h750 wrap align-content-center">
             <div class="item"><h3>1</h3></div>
             <div class="item"><h3>2</h3></div>
             <div class="item"><h3>3</h3></div>
@@ -165,8 +165,8 @@
             <div class="item"><h3>6</h3></div>
         </div>
 
-        <h3><span class="pink-purple">align-content: flex-end;</span></h3>
-        <div class="container w1k h1250 wrap align-content-flex-end">
+        <h3><span class="light-yellow">align-content: flex-end;</span></h3>
+        <div class="container w1k h750 wrap align-content-flex-end">
             <div class="item"><h3>1</h3></div>
             <div class="item"><h3>2</h3></div>
             <div class="item"><h3>3</h3></div>
@@ -175,24 +175,109 @@
             <div class="item"><h3>6</h3></div>
         </div>
 
+        <h3><span class="light-yellow">align-content: space-between;</span></h3>
+        <div class="container w1k h750 wrap align-content-space-between">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+            <div class="item"><h3>5</h3></div>
+            <div class="item"><h3>6</h3></div>
+        </div>
 
+        <h3><span class="light-yellow">align-content: space-around;</span></h3>
+        <div class="container w1k h750 wrap align-content-space-around">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+            <div class="item"><h3>5</h3></div>
+            <div class="item"><h3>6</h3></div>
+        </div>
 
+        <h3><span class="light-yellow">align-content: space-evenly;</span></h3>
+        <div class="container w1k h750 wrap align-content-space-evenly">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+            <div class="item"><h3>5</h3></div>
+            <div class="item"><h3>6</h3></div>
+        </div>
 
+        <h3><span class="light-yellow">justify-content: center;</span></h3>
+        <h3><span class="light-yellow">align-content: flex-start;</span></h3>
+        <h3><span class="light-yellow">gap: 16px;</span></h3>
+        <div class="container w1k h750 wrap gap justify-content-center align-content-flex-start">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+            <div class="item"><h3>5</h3></div>
+            <div class="item"><h3>6</h3></div>
+        </div>
 
+        <h2>Now lets see properties that we apply to child flex item inside of flex container</h2>
+        <h3><span class="pink-purple">flex-grow: 1;</span></h3>
+        <div class="container w750 h500 wrap align-content-space-evenly">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item flex-grow-1"><h3>3</h3></div>
+            <div class="item flex-grow-1"><h3>4</h3></div>
+        </div>
 
+        <h3><span class="pink-purple">flex-shrink: 3;</span> means that first element shrinks 3 times faster than other two</h3>
+        <div class="container width-five-eighths h500">
+            <div class="item flex-shrink-3"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
 
+        <h3><span class="pink-purple">flex-shrink: 0;</span> means that second element remain the same size as always while other two shrinks</h3>
+        <div class="container width-five-eighths h500">
+            <div class="item"><h3>1</h3></div>
+            <div class="item flex-shrink-0"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
 
+        <h3><span class="pink-purple">flex-basis: 500px;</span> you can change the size of item</h3>
+        <div class="container width-five-eighths h500">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item flex-basis-500px"><h3>3</h3></div>
+        </div>
 
+        <h3><span class="pink-purple">flex: (grow value), (shrink value), (basis value);</span> shorthand where you can write all 3 properties, or how many you choose</h3>
+        <div class="container width-five-eighths h500">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item flex-grow-1 flex-shrink-3 flex-basis-500px"><h3>3</h3></div>
+        </div>
 
+        <h3>all elements with one alignment <span class="light-yellow">align-self: center;</span> and specific one with other</h3>
+        <h3>possible values: <span class="light-yellow">flex-start;</span> <span class="light-yellow">flex-end;</span> <span class="light-yellow">baseline;</span></h3>
+        <div class="container w1k h500 align-items-flex-end">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item align-self-center"><h3>3</h3></div>
+        </div>
+
+        <h3>we can order our items <span class="light-yellow">order: -1;</span> make one element before all others</h3>
+        <div class="container w1k h500">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item order--1"><h3>3</h3></div>
+        </div>
+
+        <h2><span class="pink-purple">Just last one for fun!</span></h2>
         <div class="container width-seven-eighths justify-evenly-align-items">
             <div class="item"><h3>1</h3></div>
             <div class="item"><h3>2</h3></div>
             <div class="item"><h3>3</h3></div>
-            <div class="item"><h3>4</h3></div>
         </div>
 
-        <!-- <h3 >flex-wrap: wrap;</h3> -->
-
+        <h2><span class="light-yellow">link for inspired video: "<a href="https://www.youtube.com/watch?v=phWxA89Dy94">Learn Flexbox CSS in 8 minutes</a>" by Slaying The Dragon</span></h2>
+        
     </div>
 </body>
 </html>
