@@ -9,38 +9,189 @@
 </head>
 <body>
     <div class="main-container">
-        <h1 style="text-align: center; margin: 25px;">Basic Flexbox Properties</h1>
+        <h1>Basic Flexbox Properties</h1>
     
-        <h2>CSS Flexbox (<em>short for css flexible box layout module</em>)</h2>
-        <p>CSS Flexbox is short for the CSS Flexible Box Layout module.</p>
         <p>Flexbox is a layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.</p>
         <p>Flexbox makes it easy to design a flexible and responsive layout, without using float or positioning.</p>
         
         <h2>To create flex container, use display property with flex value: <span class="pink-purple">display: flex;</span></h2>
         
-        <div class="outer-container one-forth justify-evenly-align-center">
-            <div class="outer-container-item-4"></div>
-            <div class="outer-container-item-4"></div>
-            <div class="outer-container-item-4"></div>
-            <div class="outer-container-item-4"></div>
+        <div class="container w1k h500">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
         </div>
 
-        <div class="outer-container one-to-one justify-evenly-align-center">
-            <div class="outer-container-item-1"></div>
+        <p>main axes from left corner to right corner of container</p>
+        <h3 class="light-yellow">-------------------------&gt;</h3>
+        <p>and cross axes is a perpendicular for main axes, from top to bottom</p>
+        <h3 class="light-yellow no-margin">|</h3>
+        <h3 class="light-yellow no-margin">|</h3>
+        <h3 class="light-yellow no-margin">↓</h3>
+
+        <h2>Horizontal line <span class="pink-purple">flex-direction: row;</span> is a default value for main axes</h2>
+        <h2>But we can change <span class="pink-purple">flex-direction: column;</span> and now our main axes become vertical</h2>
+        <p>which makes cross axe became horizontal</p>
+
+        <div class="container w1k h1k wrap column">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
         </div>
 
-        <div class="outer-container one-to-one wrap">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+        <h2><span class="pink-purple">justify-content: flex-start;</span> is a default value</h2>
+        <h3>Other options <span class="pink-purple">justify-content: flex-end;</span></h3>
+        
+        <div class="container w1k h250 justify-content-flex-end">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
         </div>
 
-        <!-- <h2 >flex-wrap: wrap;</h2> -->
+        <h3><span class="pink-purple">justify-content: center;</span></h3>
+        <div class="container w1k h250 justify-content-center">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">justify-content: space-between;</span></h3>
+        <div class="container w1k h250 justify-content-space-between">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">justify-content: space-around;</span></h3>
+        <div class="container w1k h250 justify-content-space-around">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">justify-content: space-evenly;</span></h3>
+        <div class="container w1k h250 justify-content-space-evenly">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+
+
+        <h2><span class="light-yellow">flex-direction: row-reverse;</span> from last element to first</h2>
+        <h3><span class="light-yellow">justify-content: flex-end;</span></h3>
+        <div class="container w1k h250 justify-content-flex-end row-reverse">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="light-yellow">justify-content: center;</span></h3>
+        <div class="container w1k h250 justify-content-center row-reverse">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="light-yellow">justify-content: space-between;</span></h3>
+        <div class="container w1k h250 justify-content-space-between row-reverse">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="light-yellow">justify-content: space-around;</span></h3>
+        <div class="container w1k h250 justify-content-space-around row-reverse">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="light-yellow">justify-content: space-evenly;</span></h3>
+        <div class="container w1k h250 justify-content-space-evenly row-reverse">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h2>Let's see how <span class="pink-purple">align-items</span> properties works</h2>
+        <h3><span class="pink-purple">align-items: flex-start;</span></h3>
+        <div class="container w1k h750 wrap align-items-flex-start">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">align-items: center;</span></h3>
+        <div class="container w1k h750 align-items-center">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">align-items: flex-end;</span></h3>
+        <div class="container w1k h750 align-items-flex-end">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">align-items: baseline;</span></h3>
+        <div class="container w1k h750 align-items-baseline">
+            <div class="item font-size32"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+        </div>
+
+        <h2>Let's see how <span class="pink-purple">align-content</span> properties works</h2>
+        <h2>and use wrap effect <span class="pink-purple">flex-wrap: wrap;</span></h2>
+        <h3><span class="pink-purple">align-content: flex-start;</span></h3>
+        <div class="container w1k h1250 wrap align-content-flex-start">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+            <div class="item"><h3>5</h3></div>
+            <div class="item"><h3>6</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">align-content: center;</span></h3>
+        <div class="container w1k h1250 wrap align-content-center">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+            <div class="item"><h3>5</h3></div>
+            <div class="item"><h3>6</h3></div>
+        </div>
+
+        <h3><span class="pink-purple">align-content: flex-end;</span></h3>
+        <div class="container w1k h1250 wrap align-content-flex-end">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+            <div class="item"><h3>5</h3></div>
+            <div class="item"><h3>6</h3></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="container width-seven-eighths justify-evenly-align-items">
+            <div class="item"><h3>1</h3></div>
+            <div class="item"><h3>2</h3></div>
+            <div class="item"><h3>3</h3></div>
+            <div class="item"><h3>4</h3></div>
+        </div>
+
+        <!-- <h3 >flex-wrap: wrap;</h3> -->
 
     </div>
 </body>
